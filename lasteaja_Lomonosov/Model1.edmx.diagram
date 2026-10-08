@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="eac45e67092d4f18ab24c7b86692348f" Name="Diagram1" ZoomLevel="73" >
+        <EntityTypeShape EntityType="Model1.tootaja" Width="1.5" PointX="0.625" PointY="0.5" />
+        <EntityTypeShape EntityType="Model1.tootmine" Width="1.5" PointX="2.5" PointY="0.5" />
+        <AssociationConnector Association="Model1.tootajatootmine" />
+        <EntityTypeShape EntityType="Model1.ametikoht" Width="1.5" PointX="2.5" PointY="3.375" />
+        <EntityTypeShape EntityType="Model1.ametikohttyyp" Width="1.5" PointX="0.625" PointY="3.375" />
+        <AssociationConnector Association="Model1.ametikohttyypametikoht" />
+        <AssociationConnector Association="Model1.ametikohttootmine" />
+        <EntityTypeShape EntityType="Model1.ruhm" Width="1.5" PointX="4.375" PointY="0.5" />
+        <EntityTypeShape EntityType="Model1.ruhmatyyp" Width="1.5" PointX="4.875" PointY="3.375" />
+        <AssociationConnector Association="Model1.ruhmatyypruhm" />
+        <AssociationConnector Association="Model1.ruhmametikoht" />
+        <EntityTypeShape EntityType="Model1.ruhmasOlek" Width="1.5" PointX="6.75" PointY="0.625" />
+        <AssociationConnector Association="Model1.ruhmruhmasOlek" />
+        <EntityTypeShape EntityType="Model1.laps" Width="1.5" PointX="7.625" PointY="3.375" />
+        <AssociationConnector Association="Model1.lapsruhmasOlek" />
+        <EntityTypeShape EntityType="Model1.pudumise" Width="1.5" PointX="9.5" PointY="0.625" />
+        <AssociationConnector Association="Model1.lapspudumise" />
+        <EntityTypeShape EntityType="Model1.jarjekord" Width="1.5" PointX="10.125" PointY="3.125" />
+        <AssociationConnector Association="Model1.lapsjarjekord" />
+        <AssociationConnector Association="Model1.ruhmjarjekord" />
+        <EntityTypeShape EntityType="Model1.roog" Width="1.5" PointX="6" PointY="6.375" />
+        <EntityTypeShape EntityType="Model1.menyy" Width="1.5" PointX="9.5" PointY="6.75" />
+        <EntityTypeShape EntityType="Model1.roog_menyy" Width="1.5" PointX="7.75" PointY="6.875" />
+        <AssociationConnector Association="Model1.menyyroog_menyy" />
+        <AssociationConnector Association="Model1.roogroog_menyy" />
+        <EntityTypeShape EntityType="Model1.toidu_valjastus" Width="1.5" PointX="3.875" PointY="6.5" />
+        <AssociationConnector Association="Model1.roogtoidu_valjastus" />
+        <AssociationConnector Association="Model1.ruhmtoidu_valjastus" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

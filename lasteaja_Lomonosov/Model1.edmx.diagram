@@ -13,7 +13,7 @@
         <AssociationConnector Association="Model1.ametikohttyypametikoht" />
         <AssociationConnector Association="Model1.ametikohttootmine" />
         <EntityTypeShape EntityType="Model1.ruhm" Width="1.5" PointX="4.375" PointY="0.5" />
-        <EntityTypeShape EntityType="Model1.ruhmatyyp" Width="1.5" PointX="4.875" PointY="3.375" />
+        <EntityTypeShape EntityType="Model1.ruhmatyyp" Width="1.5" PointX="4.875" PointY="3.875" />
         <AssociationConnector Association="Model1.ruhmatyypruhm" />
         <AssociationConnector Association="Model1.ruhmametikoht" />
         <EntityTypeShape EntityType="Model1.ruhmasOlek" Width="1.5" PointX="6.75" PointY="0.625" />

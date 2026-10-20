@@ -11,7 +11,7 @@ namespace lasteaja_Lomonosov
 {
 
 
-    public partial class WebForm1
+    public partial class Ruhm_tyyp
     {
 
         /// <summary>

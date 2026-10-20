@@ -9,7 +9,7 @@ namespace lasteaja_Lomonosov
 {
     public partial class SiteMaster : MasterPage
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected void Page_Load(System.Object sender, System.EventArgs e)
         {
 
         }

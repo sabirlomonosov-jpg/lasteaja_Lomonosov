@@ -3,9 +3,16 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <p>
         <br />
-        -<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ametikohttyyp_id" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display.">
+        <h1>Ametikoht tüüp</h1>
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ametikohttyyp_id" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display.">
             <Columns>
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                <asp:CommandField
+    ShowDeleteButton="True"
+    ShowEditButton="True"
+    EditText="Muuda"
+    DeleteText="Kustuta"
+    UpdateText="Salvesta"
+    CancelText="Tühista" />
                 <asp:BoundField DataField="ametikohttyyp_id" HeaderText="ametikohttyyp_id" ReadOnly="True" SortExpression="ametikohttyyp_id" />
                 <asp:BoundField DataField="nimetus" HeaderText="nimetus" SortExpression="nimetus" />
             </Columns>
@@ -38,7 +45,10 @@
             <Fields>
                 <asp:BoundField DataField="ametikohttyyp_id" HeaderText="ametikohttyyp_id" InsertVisible="False" ReadOnly="True" SortExpression="ametikohttyyp_id" />
                 <asp:BoundField DataField="nimetus" HeaderText="nimetus" SortExpression="nimetus" />
-                <asp:CommandField ShowDeleteButton="True" ShowInsertButton="True" />
+                <asp:CommandField ShowDeleteButton="True" ShowInsertButton="True"
+                    InsertText="Lisa"
+                    CancelText="Tühista"
+                    NewText="Uus" />
             </Fields>
         </asp:DetailsView>
     </p>
